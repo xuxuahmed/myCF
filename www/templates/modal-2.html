@@ -1,0 +1,32 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+      <h1 class="title">Remove Daily Medicine </h1>
+      <div class="buttons">
+        <button class="button button-icon ion-close" ng-click="closeModal(2)">
+        </button>
+      </div>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="crude in crude">
+         
+  <ion-list show-delete="shouldShowDelete">
+  <ion-item>
+    <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+           <strong> {{crude.when}} <strong>
+           <input type="text" placeholder="{{crude.name}}" ng-model="crude.name">
+           <input type="text" placeholder="{{crude.tablet}}" ng-model="crude.tablet">
+           <button  class="button button-outline button-small button-assertive" ng-click="deleteDaily({{crude.id}})">Delete</button>
+  </ion-item>
+</ion-list>
+</ion-item>
+
+         
+ </ion-list>
+              
+    </ion-content>
+    <!--<ion-footer-bar class="bar-positive" >
+      <h1 class="title"><button class="button button-icon ion-closee" ng-click="save(daily)">Delete</button> </h1>-->
+ 
+    </ion-content>
+  </ion-modal-view>

@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Daily Medicine"
+        
+    },
+    {
+        "id": "2",
+        "name": "Oral Medicine"
+        
+    },
+    {
+        "id": "3",
+        "name": "Inhaled Medicine"
+        
+    },
+    {
+        "id": "4",
+        "name": "Other"
+        
+    }
+    
+]

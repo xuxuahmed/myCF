@@ -1,0 +1,29 @@
+
+<ion-modal-view>
+ 
+<ion-header-bar class="bar-positive">
+      <h1 class="title">Edit Daily Medicine </h1>
+      <div class="buttons">
+        <button class="button button-icon ion-close" ng-click="closeModal(1)">
+        </button>
+      </div>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="crude in crude">
+         
+        <strong> {{crude.when}}: {{crude.time}}  {{crude.am}} <strong>
+           <input type="text" placeholder="{{crude.name}}" ng-model="crude.name"></input>
+          <input type="text" placeholder="{{crude.tablet}}"  ng-model="crude.tablet"></input> 
+        
+        </ion-item>
+
+        
+         
+      </ion-list>
+              
+    </ion-content>
+    <!--<ion-footer-bar class="bar-positive" >-->
+      <!--<h1 class="title"><button class="button button-icon ion-closee" ng-click="save(daily)">Save</button> </h1>-->
+        
+  </ion-modal-view>

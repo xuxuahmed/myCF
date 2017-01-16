@@ -1,0 +1,29 @@
+<ion-view view-title="Nutrition Guidelines"> 
+
+  <ion-tabs class="tabs-icon-bottom tabs-color-active-assertive">
+<!-- Nutrition Guideline Tab -->
+ 
+  <ion-tab title="Nutrition Guideline" icon-off="ion-ios-information-outline"
+   icon-on="ion-ios-information" ui-sref="app.nutrition.guide"> 
+  <ion-nav-view name="nutrition-guide"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Diet Plans Tab -->
+  <ion-tab title="Nutrition Plans" icon-off="ion-ios-flower-outline" icon-on="ion-ios-flower"
+   ui-sref="app.nutrition.plans">
+     <ion-nav-view name="nutrition-plans"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Recipes Tab -->
+  <ion-tab title="Recipes" icon-off="ion-android-restaurant" icon-on="ion-android-restaurant" 
+  ui-sref="app.nutrition.recipes">
+     <ion-nav-view name="nutrition-recipes"></ion-nav-view>
+  </ion-tab>
+
+ 
+<ion-tab >
+  ui-sref="app.nutrition.foods">
+     <ion-nav-view name="nutrition-foods"></ion-nav-view>
+  </ion-tab>
+</ion-tabs>
+</ion-view>

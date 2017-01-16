@@ -1,0 +1,47 @@
+<!--Modal View to Add New Medicine-->
+<ion-modal-view>
+<ion-header-bar class="bar-positive">
+      <h1 class="title">Add New Daily Medicince </h1>
+      <div class="buttons">
+          <!--Modal Close Button-->
+        <button class="button button-icon ion-close" ng-click="closeModal(3)">
+        </button>
+      </div>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-radio ng-model="crude.when" ng-value="'Morning'">Morning</ion-radio>
+        <ion-radio ng-model="crude.when" ng-value="'Noon'">Noon</ion-radio>
+        <ion-radio ng-model="crude.when" ng-value="'Afternoon">Afternoon</ion-radio>
+        <ion-radio ng-model="crude.when" ng-value="'Evening'">Evening</ion-radio>       
+
+        <label class="item item-input">
+            <span class="input-label">Time:</span>
+            <input type="text"  placeholder="0:00"  ng-model="crude.time">
+        </label> 
+        <label class="item item-input">
+            <span class="input-label">Time:</span>
+            <input type="text"  placeholder="PM"  ng-model="crude.am">
+        </label> 
+
+        <label class="item item-input">
+            <span class="input-label">Medicine Name:</span>
+            <input type="text"  placeholder="Medicine Name"  ng-model="crude.name">
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Number of Tablets:</span>
+            <input type="text"  placeholder="Tablets"  ng-model="crude.tablet">
+        </label>
+
+    </ion-item>
+
+    </ion-list>
+
+</ion-content>
+
+<ion-footer-bar class="bar-positive" >
+
+    <h1 class="title"><button class="button button-icon ion-closee" ng-click="addMed(crude)">Save</button> </h1>
+        
+</ion-modal-view>

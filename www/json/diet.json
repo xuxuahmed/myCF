@@ -1,0 +1,20 @@
+[
+ {
+        "id": "1",
+        "name": "High Calcium",
+        "foods":"Egg, Milk,Butter"
+        
+    }
+    ,
+     {
+        "id": "2",
+        "name": "Vitamins"
+        
+    }
+    ,
+ {
+        "id": "4",
+        "name": "Amoxcyllin"
+        
+    }
+]

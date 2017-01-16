@@ -1,0 +1,35 @@
+[
+ {
+        "id": "1",
+        "time":"Morning: 8:30 AM",
+        "med":"Erythromycin",
+        "tablet":"2 tablets" ,
+        "checked": "false" 
+
+    }
+    ,
+     {
+        
+        "id": "2",
+        "time": "Noon: 12:30 PM",
+        "med":"Zinatt",
+        "tablet":"1 tablet" , 
+         "checked": "false"       
+    }
+    ,
+ {        
+        "id": "3",
+        "time": "Evening: 7:30 PM",
+        "med":"Augmentin",
+        "tablet":"1 tablet" ,
+         "checked": "false"        
+    },
+    {
+       
+        "id": "4",
+        "time": "Night: 10:30 PM",
+        "med":"Amoxcyllin",
+        "tablet":"1 tablet" ,
+         "checked": "false"        
+    }
+]

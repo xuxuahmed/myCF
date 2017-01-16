@@ -1,0 +1,31 @@
+<ion-view view-title="Breakfast Recipes">     
+  <ion-content class="padding has sub-headers">
+
+<div class = "row responsive-sm">
+   <div class = "col-sm-8 col-xs-8">
+      
+       <img src="img/Breakfast.jpg" class ="img-responsive" width = "100%" >
+
+       <h1 class="underlined assertive">Breakfast</h1>
+       </div>
+</div>
+ 
+ <ion-list class=" item-text-wrap">
+          <ion-item  ng-repeat="foods in foods">
+           
+<div class="item-icon-right" ng-click="show = false;">
+        <i class="icon ion-ios-close-empty assertive"></i>
+        </div>
+         
+                 <br><strong >  {{foods.name}} </strong>   <a  class="  assertive" ng-click="show = true;"> View </a>
+                <div ng-if="show">Ingredients: {{foods.ing}} <br> <br>
+                <strong> DIRECTION: </strong> <br> {{foods.direction}}
+                </div>      
+          </ion-item>
+        
+         </ion-item>
+    
+</ion-list>
+
+  </ion-content>
+</ion-view>

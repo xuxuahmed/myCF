@@ -1,0 +1,22 @@
+<ion-view view-title="Daily Medicine List">
+<ion-content>
+<div class="bar bar-header has sub-header">
+ <button class="button button-icon ion-edit assertive" ng-click="openModal(1)"></button>
+ <button class="button button-icon ion-android-delete assertive" ng-click="openModal(2)"></button>
+ <button class="button button-icon ion-compose assertive" ng-click="openModal(3)"></button>
+</div>
+<br>
+    <list class="list list-inset" ng-repeat="crude in crude">
+      <div class="item">      
+  <strong>{{crude.when}}: {{crude.time}} {{crude.am}}</strong> <br>{{crude.name}} <br> {{crude.tablet}}
+  
+  </div>
+ 
+</list>
+  </div>
+          
+
+  </ion-content>
+
+  
+</ion-view>

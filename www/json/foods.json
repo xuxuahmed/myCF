@@ -1,0 +1,41 @@
+[
+    {       
+        "id": "1",
+        "item": "Infant",
+        "age": "Birth to 12 Months",
+        "pic": "img/img-infant.png"
+        
+    },
+    {
+       
+        "id": "2",
+        "item": "Toddler",
+        "age": "1 to 3 Years",
+        "pic": "img/toddler_img.jpg"
+    },
+    {
+       
+      "id": "3",
+        "item": "Child" ,
+        "age": "4 to 12 Years",
+        "pic": "img/child_img.jpg"
+        
+    },
+    {
+       
+      "id": "4",
+        "item": "Teenager" ,
+        "age": "13 to 17 Years",
+        "pic": "img/teen_img.jpg"
+        
+    },
+    {
+       
+        "id": "5",
+        "item": "Adult",
+        "age": "18+ Years",
+        "pic": "img/adult_img.jpg"
+        
+    }
+        
+]

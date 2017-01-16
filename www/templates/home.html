@@ -1,0 +1,85 @@
+<ion-view view-title="Home">
+  <ion-content>
+        <ion-slide-box on-slide-changed="slideChanged(index)" >
+          <ion-slide>
+           
+            <div id="logo">
+               <img src="img/ad1.png" class ="img-responsive" width = "100%" >
+
+            </div>
+     
+          </ion-slide>
+          <ion-slide>
+            <div id="logo">
+               <img src="img/ad2.jpg" class ="img-responsive" width = "100%" >
+
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div id="logo">
+               <img src="img/ad3.jpg" class ="img-responsive" width = "100%" >
+
+            </div>
+          </ion-slide>
+   <ion-slide>
+            <div id="logo">
+               <img src="img/ad4.png" class ="img-responsive" width = "100%" >
+
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+
+         <buttons side="left">
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-show="!slideIndex">
+            Skip Intro
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="previous()" ng-show="slideIndex > 0">
+            Previous Slide
+          </button>
+        </buttons>
+        <buttons side="right"> 
+
+          <button class="button button-positive button-clear-left no-animation"
+                  ng-click="next()" ng-show="slideIndex != 3">
+            Next
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-show="slideIndex == 3">
+            End
+          </button>
+        </buttons>
+         
+         <div class ="container item-text-wrap">
+<h3 class="assertive" >Featured Articles <h3>
+           </div>
+               <ion-list>
+  <ion-item>
+   <img src="img/diet_fitness.jpg" class ="img-responsive" width = "100%" >
+   <br><h3 style="margin-top: 20px;"> The CF Diet and Fitness</h3>
+   <p> CF fitness expert Elizabeth Williams offers some diet and fitness advice to those with cystic fibrosis....
+     </p>
+    <a> Read More </a>
+  </ion-item>
+
+  <ion-item>
+   <img src="img/baby.jpg" class ="img-responsive" width = "100%" >
+   <br><h3 style="margin-top: 20px;"> Your Baby and CF</h3>
+   <p> Your baby and CF
+Learn more about how you can assist in managing CF for your baby.....
+     </p>
+    <a> Read More </a>
+  </ion-item>
+
+
+</ion-list>   
+  
+  
+  </div>
+ 
+</list>
+
+        
+  </ion-content>
+</ion-view>

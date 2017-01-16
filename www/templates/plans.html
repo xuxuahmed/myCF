@@ -1,0 +1,11 @@
+<ion-view view-title="Nutrition Plans">  
+  <ion-content >
+   <p class="padding assertive"> <strong>Select an age range below to learn more</strong><br></p>
+    <ion-list ng-repeat="foods in foods">
+    <a menu-close href="#/app/nutrition/{{foods.id}}" class="item item-icon-center ">    
+    <img ng-src="{{foods.pic}}" ng-click="showFoods({{foods.id}})" class ="img-responsive"
+    width = "105"/>
+      <br>{{foods.item}} <br> {{foods.age}}   
+    </ion-list>     
+  </ion-content>
+</ion-view>

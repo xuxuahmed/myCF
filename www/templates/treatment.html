@@ -1,0 +1,31 @@
+<ion-view view-title="Treatment">
+  <ion-content>
+   <div class="item item-text-wrap">
+
+<div class="bar bar-header has sub-header">
+
+
+
+ <button class="button button-icon ion-compose assertive" ng-click="openModal(1)"></button>
+ <button class="button button-icon ion-edit assertive" ng-click="openModal(2)"></button>
+</div>
+
+{{testval}}
+          
+  </div>
+  <br><list class="item item-text-wrap">
+    <ion-item ng-repeat="crude in crude">
+  
+<h3 class="assertive">Date: {{crude.date}} </h3>  <br>Treatment:  {{crude.name}}<br><br>
+Treatment Center:  {{crude.clinic}}<br>
+<br>
+Details:  {{crude.details}}<br>
+</ion-item>
+<list>
+
+
+
+  </ion-content>
+
+
+</ion-view>
